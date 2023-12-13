@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C78BC18282471DE2D89035BE /* Pods_Firebase_Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB02DDFEA095B7ED8C38B8F /* Pods_Firebase_Twitter.framework */; };
+		C910E6B72B26CE390020EADE /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C910E6B62B26CE390020EADE /* LogInViewController.swift */; };
 		C948186A2B233BF400D61B1C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C94818692B233BF400D61B1C /* GoogleService-Info.plist */; };
 		C958FAC92B2334B0006C1793 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C958FAC82B2334B0006C1793 /* AppDelegate.swift */; };
 		C958FACB2B2334B0006C1793 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C958FACA2B2334B0006C1793 /* SceneDelegate.swift */; };
@@ -15,11 +16,17 @@
 		C958FAD02B2334B0006C1793 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C958FACE2B2334B0006C1793 /* Main.storyboard */; };
 		C958FAD22B2334B6006C1793 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C958FAD12B2334B6006C1793 /* Assets.xcassets */; };
 		C958FAD52B2334B6006C1793 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C958FAD32B2334B6006C1793 /* LaunchScreen.storyboard */; };
+		C988B10A2B26D4B500C769C2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C988B1092B26D4B500C769C2 /* SignUpViewController.swift */; };
+		C988B10C2B26D4D700C769C2 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C988B10B2B26D4D600C769C2 /* DataViewController.swift */; };
+		C9C8171B2B26E6490020A68B /* design-Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C8171A2B26E6480020A68B /* design-Content.swift */; };
+		C9C8171D2B26EB4D0020A68B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C8171C2B26EB4D0020A68B /* TableViewCell.swift */; };
+		C9CE961E2B26F83B001AA0B3 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CE961D2B26F83B001AA0B3 /* AuthManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		143005A5438B73526A1750E9 /* Pods-Firebase_Twitter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase_Twitter.release.xcconfig"; path = "Target Support Files/Pods-Firebase_Twitter/Pods-Firebase_Twitter.release.xcconfig"; sourceTree = "<group>"; };
 		BF18D9E948A0219B6DDD88D0 /* Pods-Firebase_Twitter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase_Twitter.debug.xcconfig"; path = "Target Support Files/Pods-Firebase_Twitter/Pods-Firebase_Twitter.debug.xcconfig"; sourceTree = "<group>"; };
+		C910E6B62B26CE390020EADE /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		C94818692B233BF400D61B1C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		C958FAC52B2334B0006C1793 /* Firebase_Twitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Firebase_Twitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C958FAC82B2334B0006C1793 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +36,11 @@
 		C958FAD12B2334B6006C1793 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C958FAD42B2334B6006C1793 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C958FAD62B2334B6006C1793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C988B1092B26D4B500C769C2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		C988B10B2B26D4D600C769C2 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		C9C8171A2B26E6480020A68B /* design-Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "design-Content.swift"; sourceTree = "<group>"; };
+		C9C8171C2B26EB4D0020A68B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		C9CE961D2B26F83B001AA0B3 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
 		DFB02DDFEA095B7ED8C38B8F /* Pods_Firebase_Twitter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Twitter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -50,7 +62,6 @@
 				BF18D9E948A0219B6DDD88D0 /* Pods-Firebase_Twitter.debug.xcconfig */,
 				143005A5438B73526A1750E9 /* Pods-Firebase_Twitter.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -62,9 +73,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C910E6B12B26C9970020EADE /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C958FACC2B2334B0006C1793 /* ViewController.swift */,
+				C910E6B62B26CE390020EADE /* LogInViewController.swift */,
+				C988B1092B26D4B500C769C2 /* SignUpViewController.swift */,
+				C988B10B2B26D4D600C769C2 /* DataViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		C910E6B22B26C9A50020EADE /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				C958FAD32B2334B6006C1793 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		C910E6B32B26CD9C0020EADE /* design-Extension */ = {
+			isa = PBXGroup;
+			children = (
+				C9C8171A2B26E6480020A68B /* design-Content.swift */,
+			);
+			path = "design-Extension";
+			sourceTree = "<group>";
+		};
 		C958FABC2B2334AF006C1793 = {
 			isa = PBXGroup;
 			children = (
+				C9CE961C2B26F7EE001AA0B3 /* Auth */,
+				C9C8171E2B26EB5B0020A68B /* Cell's */,
+				C910E6B32B26CD9C0020EADE /* design-Extension */,
+				C910E6B22B26C9A50020EADE /* LaunchScreen */,
+				C910E6B12B26C9970020EADE /* controllers */,
 				C958FAC72B2334B0006C1793 /* Firebase_Twitter */,
 				C958FAC62B2334B0006C1793 /* Products */,
 				8FDAD086D21429A7ACDE41F2 /* Pods */,
@@ -85,14 +128,28 @@
 			children = (
 				C958FAC82B2334B0006C1793 /* AppDelegate.swift */,
 				C958FACA2B2334B0006C1793 /* SceneDelegate.swift */,
-				C958FACC2B2334B0006C1793 /* ViewController.swift */,
 				C958FACE2B2334B0006C1793 /* Main.storyboard */,
 				C958FAD12B2334B6006C1793 /* Assets.xcassets */,
-				C958FAD32B2334B6006C1793 /* LaunchScreen.storyboard */,
 				C958FAD62B2334B6006C1793 /* Info.plist */,
 				C94818692B233BF400D61B1C /* GoogleService-Info.plist */,
 			);
 			path = Firebase_Twitter;
+			sourceTree = "<group>";
+		};
+		C9C8171E2B26EB5B0020A68B /* Cell's */ = {
+			isa = PBXGroup;
+			children = (
+				C9C8171C2B26EB4D0020A68B /* TableViewCell.swift */,
+			);
+			path = "Cell's";
+			sourceTree = "<group>";
+		};
+		C9CE961C2B26F7EE001AA0B3 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				C9CE961D2B26F83B001AA0B3 /* AuthManager.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,8 +268,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C988B10A2B26D4B500C769C2 /* SignUpViewController.swift in Sources */,
+				C9CE961E2B26F83B001AA0B3 /* AuthManager.swift in Sources */,
+				C9C8171D2B26EB4D0020A68B /* TableViewCell.swift in Sources */,
+				C9C8171B2B26E6490020A68B /* design-Content.swift in Sources */,
+				C988B10C2B26D4D700C769C2 /* DataViewController.swift in Sources */,
 				C958FACD2B2334B0006C1793 /* ViewController.swift in Sources */,
 				C958FAC92B2334B0006C1793 /* AppDelegate.swift in Sources */,
+				C910E6B72B26CE390020EADE /* LogInViewController.swift in Sources */,
 				C958FACB2B2334B0006C1793 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
