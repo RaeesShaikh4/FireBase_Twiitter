@@ -18,6 +18,7 @@
 		C958FAD52B2334B6006C1793 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C958FAD32B2334B6006C1793 /* LaunchScreen.storyboard */; };
 		C988B10A2B26D4B500C769C2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C988B1092B26D4B500C769C2 /* SignUpViewController.swift */; };
 		C988B10C2B26D4D700C769C2 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C988B10B2B26D4D600C769C2 /* DataViewController.swift */; };
+		C9B9B0122B2999A900F2F820 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B9B0112B2999A800F2F820 /* CommentViewController.swift */; };
 		C9C8171B2B26E6490020A68B /* design-Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C8171A2B26E6480020A68B /* design-Content.swift */; };
 		C9C8171D2B26EB4D0020A68B /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C8171C2B26EB4D0020A68B /* TableViewCell.swift */; };
 		C9CE961E2B26F83B001AA0B3 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9CE961D2B26F83B001AA0B3 /* AuthManager.swift */; };
@@ -38,6 +39,7 @@
 		C958FAD62B2334B6006C1793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C988B1092B26D4B500C769C2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		C988B10B2B26D4D600C769C2 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		C9B9B0112B2999A800F2F820 /* CommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
 		C9C8171A2B26E6480020A68B /* design-Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "design-Content.swift"; sourceTree = "<group>"; };
 		C9C8171C2B26EB4D0020A68B /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		C9CE961D2B26F83B001AA0B3 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				C910E6B62B26CE390020EADE /* LogInViewController.swift */,
 				C988B1092B26D4B500C769C2 /* SignUpViewController.swift */,
 				C988B10B2B26D4D600C769C2 /* DataViewController.swift */,
+				C9B9B0112B2999A800F2F820 /* CommentViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9B9B0122B2999A900F2F820 /* CommentViewController.swift in Sources */,
 				C988B10A2B26D4B500C769C2 /* SignUpViewController.swift in Sources */,
 				C9CE961E2B26F83B001AA0B3 /* AuthManager.swift in Sources */,
 				C9C8171D2B26EB4D0020A68B /* TableViewCell.swift in Sources */,

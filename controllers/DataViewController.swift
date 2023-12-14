@@ -14,6 +14,8 @@ class DataViewController: UIViewController, UITableViewDelegate, UITableViewData
     var selectedUserUUID: String?
     
     @IBOutlet var sortTxtField: UITextField!
+    @IBOutlet var profileBTN: UIButton!
+    
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -53,10 +55,12 @@ class DataViewController: UIViewController, UITableViewDelegate, UITableViewData
     }
     
     func filterContentForSearchText(_ searchText: String) {
-        if searchText.isEmpty{
+        if searchText.isEmpty {
             filteredUser = user
-        }else{
-            filteredUser = user.filter { $0.name.lowercased().contains(searchText.lowercased()) }
+        } else {
+            filteredUser = user.filter {
+                $0.name.range(of: searchText, options: .caseInsensitive) != nil
+            }
         }
         tableView.reloadData()
     }
@@ -78,4 +82,25 @@ class DataViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 75
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+        let selectedUser = user[indexPath.row]
+        selectedUserUUID = selectedUser.uuid
+        
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeVC = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+        
+        
+        homeVC.profileUserID = selectedUserUUID!
+              homeVC.name = selectedUser.name
+              homeVC.email = selectedUser.email
+        
+        
+        self.navigationController?.pushViewController(homeVC, animated: true) ?? self.present(homeVC, animated: true, completion: nil)
+    }
+ 
+
+    
 }
+
