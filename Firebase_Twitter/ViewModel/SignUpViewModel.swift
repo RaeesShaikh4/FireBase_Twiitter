@@ -17,7 +17,7 @@ protocol completionDelegate{
 
 class SignUpViewModel {
     
-    var CompletionDelegate: completionDelegate?
+    var delegate: completionDelegate?
     var FireStore = Firestore.self
     
     func signUp(name: String?, email: String?, password: String?) {
@@ -25,17 +25,17 @@ class SignUpViewModel {
         guard let name = name, !name.isEmpty,
               let email = email, !email.isEmpty,
               let password = password, !password.isEmpty  else {
-            CompletionDelegate?.failure(message: "Please enter name, email, and password.")
+            delegate?.failure(message: "Please enter name, email, and password.")
             
             return
         }
         
         FirebaseAuth.Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
             if let error = error {
-                self.CompletionDelegate?.failure(message: error.localizedDescription)
+                self.delegate?.failure(message: error.localizedDescription)
             } else {
                 guard let user = authResult?.user else {
-                    self.CompletionDelegate?.failure(message: "User data is not available.")
+                    self.delegate?.failure(message: "User data is not available.")
                     return
                 }
                 
@@ -46,9 +46,9 @@ class SignUpViewModel {
                 self.storeUserData(user: newUser) { result in
                     switch result {
                     case .success(let storedUser):
-                        self.CompletionDelegate?.success(user: storedUser)
+                        self.delegate?.success(user: storedUser)
                     case .failure(let storeError):
-                        self.CompletionDelegate?.failure(message: storeError.localizedDescription)
+                        self.delegate?.failure(message: storeError.localizedDescription)
                     }
                 }
             }
@@ -68,9 +68,9 @@ class SignUpViewModel {
             "likes": user.likes
         ]) { error in
             if let error = error {
-                self.CompletionDelegate?.failure(message: error.localizedDescription)
+                self.delegate?.failure(message: error.localizedDescription)
             } else {
-                self.CompletionDelegate?.success(user: user)
+                self.delegate?.success(user: user)
             }
             
         }

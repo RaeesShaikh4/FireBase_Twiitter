@@ -28,7 +28,7 @@ class SignUpViewController: UIViewController,protocolToSetBG,UITextFieldDelegate
         passSignTxtField.layer.cornerRadius = 15
         signUpOutlet.layer.cornerRadius = 10
         
-        viewModel.CompletionDelegate = self   
+        viewModel.delegate = self   
     }
     
     @IBAction func signUpBtn(_ sender: UIButton) {

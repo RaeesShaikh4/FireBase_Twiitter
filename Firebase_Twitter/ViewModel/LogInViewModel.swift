@@ -9,26 +9,25 @@ import Foundation
 import Firebase
 import FirebaseAuth
 
-protocol LogInCompletionDelegate {
+protocol CompletionDelegate {
     func success()
     func failure(message:String)
 }
 
 class LogInViewModel {
-    var loginCompletion:LogInCompletionDelegate?
+    var delegate:CompletionDelegate?
     
     func signIn(email: String?, password: String?) {
         guard let email = email, !email.isEmpty,
               let password = password, !password.isEmpty else{
-//            print("Missing Field data")
             Alert.shared.ShowAlertWithOKBtn(title: "Missing Field data", message: "Please fill both textfields...")
             return
         }
         Firebase.Auth.auth().signIn(withEmail: email, password: password) { result, error in
             if let error = error {
-                self.loginCompletion?.failure(message: error.localizedDescription)
+                self.delegate?.failure(message: error.localizedDescription)
             } else {
-                self.loginCompletion?.success()
+                self.delegate?.success()
             }
         }
     }

@@ -10,7 +10,7 @@ import Foundation
 import Firebase
 import FirebaseAuth
 
-class LogInViewController: UIViewController,protocolToSetBG,LogInCompletionDelegate{
+class LogInViewController: UIViewController,protocolToSetBG,CompletionDelegate{
     
     @IBOutlet var emailTxtField: UITextField!
     @IBOutlet var passTxtField: UITextField!
@@ -24,7 +24,7 @@ class LogInViewController: UIViewController,protocolToSetBG,LogInCompletionDeleg
         emailTxtField.layer.cornerRadius = 15
         passTxtField.layer.cornerRadius = 15
         logInBtnOutlet.layer.cornerRadius = 10
-        viewModel.loginCompletion = self
+        viewModel.delegate = self
     }
     
     
