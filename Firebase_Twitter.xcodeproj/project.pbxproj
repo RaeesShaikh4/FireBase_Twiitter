@@ -92,7 +92,6 @@
 		C910E6B12B26C9970020EADE /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C958FACC2B2334B0006C1793 /* ViewController.swift */,
 				C9B9B0112B2999A800F2F820 /* CommentViewController.swift */,
 			);
 			path = controllers;
@@ -204,6 +203,7 @@
 				C988B1092B26D4B500C769C2 /* SignUpViewController.swift */,
 				C910E6B62B26CE390020EADE /* LogInViewController.swift */,
 				C988B10B2B26D4D600C769C2 /* DataViewController.swift */,
+				C958FACC2B2334B0006C1793 /* ViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
