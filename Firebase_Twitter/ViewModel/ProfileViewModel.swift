@@ -1,8 +1,7 @@
 ////
 ////  ProfileViewModel.swift
 ////  Firebase_Twitter
-//// Success before github adding
-////  Created by Vishal on 22/12/23.
+
 
 import Foundation
 import Firebase
