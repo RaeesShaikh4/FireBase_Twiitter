@@ -1,9 +1,7 @@
 //
 //  SignUpViewModel.swift
 //  Firebase_Twitter
-//
-//  Created by Vishal on 21/12/23.
-//
+
 
 import Foundation
 import Firebase
