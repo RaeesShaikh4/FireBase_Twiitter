@@ -1,9 +1,7 @@
     //
     //  ViewController.swift
     //  Firebase_Twitter
-    //
-    //  Created by Vishal on 08/12/23.
-    //
+   
 
     import UIKit
     import Firebase
