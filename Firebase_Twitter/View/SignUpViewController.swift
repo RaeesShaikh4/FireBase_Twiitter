@@ -1,9 +1,6 @@
 //
 //  SignUpViewController.swift
 //  Firebase_Twitter
-//
-//  Created by Vishal on 11/12/23.
-//
 
 import UIKit
 import Firebase
